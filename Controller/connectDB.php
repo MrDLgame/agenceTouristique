@@ -16,7 +16,7 @@
 		$db_password = $BDD_MDP;
 		try{
     		$conn = new PDO("oci:dbname=".$tns,$db_username,$db_password);
-    		echo "Connection serveur ok!";
+    		
         return $conn;
 		}catch(PDOException $e){
 		    echo ($e->getMessage());
