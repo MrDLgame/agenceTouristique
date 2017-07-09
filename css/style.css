@@ -1,0 +1,9 @@
+body { padding-top: 70px; }
+
+.glyphicon-left{
+	margin-right: 10px;
+}
+
+.glyphicon-right{
+	margin-left: 10px;
+}
