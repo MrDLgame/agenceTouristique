@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>PROJET ORACLE</title>
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="/agencetouristique/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/agencetouristique/css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		
@@ -18,6 +18,7 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<?php 
+
 							session_start();
 							if (!empty($_SESSION['pseudo'])) { 
 
@@ -28,7 +29,7 @@
 								<li class="dropdown-header">Mon compte</li>
 								<li><a href="#"><i class="glyphicon glyphicon-list-alt glyphicon-left"></i>Mes informations</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="Controller/deconnectionMembre.php" class="btn-rouge" ><i class="glyphicon glyphicon-off glyphicon-left"></i>Deconnexion</a></li>
+								<li><a href="/agencetouristique/Controller/deconnectionMembre.php" class="btn-rouge" ><i class="glyphicon glyphicon-off glyphicon-left"></i>Deconnexion</a></li>
 							</ul>
 						</li>
 						<?php } else { ?>
@@ -46,7 +47,7 @@
 										<li class="dropdown-header">Administration</li>
 										<li><a href="#"><i class="glyphicon glyphicon-wrench glyphicon-left"></i>Configurations</a></li>
 										<li role="separator" class="divider"></li>
-										<li><a href="Views/gestionUsers.php"><i class="glyphicon glyphicon-th-list glyphicon-left"></i>Utilisateurs</a></li>
+										<li><a href="/agencetouristique/Views/gestionUsers.php"><i class="glyphicon glyphicon-th-list glyphicon-left"></i>Utilisateurs</a></li>
 									</ul>
 								</li>
 							<?php }
@@ -63,8 +64,8 @@
 			//include('Views/Popups/P_Message.php');
 		?>
 
-		<script src="js/JQuery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/script.js"></script>
+		<script src="/agencetouristique/js/JQuery.min.js"></script>
+		<script src="/agencetouristique/js/bootstrap.min.js"></script>
+		<script src="/agencetouristique/js/script.js"></script>
 	</body>
 </html>
