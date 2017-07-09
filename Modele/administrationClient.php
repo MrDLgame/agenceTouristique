@@ -14,11 +14,24 @@
 
 	}
 
+
 	function infoClient()
 	{
-		include ("../controller/connectDB.php");
+		
+	
+		 
+	$pseudo = $_GET['pseudoSelect'];	
+	include ("../controller/connectDB.php");
 	ini_set('display_errors', 1);
 	$conn =connect();
+	$req = $conn->prepare("SELECT PSEUDO, NOM, PRENOM, MAIL, MDP,  FROM CLIENT WHERE ROLE ='client' AND PSEUDO='".$pseudo."'");
+	$req->execute();
+	$resultat = $req->fetch();
+	echo $resultat['PSEUDO'];
+	echo $resultat['NOM'];
+	echo $resultat['PRENOM'];
+	echo $resultat['MAIL'];
+	echo $resultat['MDP'];
 	
 	}
 
